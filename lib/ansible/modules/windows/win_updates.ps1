@@ -76,7 +76,7 @@ $job_body = {
 
     Function DoWindowsUpdate {
         Param(
-        [string[]]$category_names=@("CriticalUpdates","SecurityUpdates","UpdateRollups","Updates","SecurityUpdates","UpdateRollups","DefinitionUpdates","ServicePacks"),
+        [string[]]$category_names=@("CriticalUpdates","SecurityUpdates","SecurityUpdates","UpdateRollups","DefinitionUpdates","ServicePacks"),
         [ValidateSet("installed", "searched")]
         [string]$state="installed",
         [bool]$_ansible_check_mode=$false
